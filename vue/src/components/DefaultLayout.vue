@@ -95,8 +95,8 @@
      return store.state.user.data
   })
 
-  function logout() { 
-    store .commit('logout');
+  async function logout() { 
+    await store.dispatch('logout');
     router.push({name:'Login'})
   }
 
